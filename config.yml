@@ -1,0 +1,16 @@
+title: Kumpulan anime
+description: Hai
+template:
+  repo: kumpulan-anime-template
+  name: kumpulan-anime
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
